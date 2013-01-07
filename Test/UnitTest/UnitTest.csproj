@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>3e2a52af-601d-45ba-a9ed-a0f0c9b0929e</ProjectGuid>
+    <ProjectGuid>{3B2BB504-3611-41E1-A723-59C5A9F84483}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>UnitTest</RootNamespace>
@@ -50,8 +50,15 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Source\IRuntimeFactoryTests.cs" />
+    <Compile Include="Source\IFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\KjWhal.Interface.csproj">
+      <Project>{f2ac9927-9110-4af9-a2f3-be3db60ae8d2}</Project>
+      <Name>KjWhal.Interface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
