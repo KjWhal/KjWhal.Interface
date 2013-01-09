@@ -41,7 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Source\IDataContext.cs" />
+    <Compile Include="Source\IBatchDataContext.cs" />
     <Compile Include="Source\IFactory.cs" />
     <Compile Include="Source\IRuntimeFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
