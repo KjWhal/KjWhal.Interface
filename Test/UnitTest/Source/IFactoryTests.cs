@@ -1,8 +1,8 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
+﻿
 namespace UnitTest
 {
+    using System;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
     using KjWhal.Interface;
 
     /// <summary>
@@ -34,9 +34,9 @@ namespace UnitTest
         }
     }
 
-    private class Factory : IFactory<string>
+    internal class Factory : IFactory<string>
     {
-        internal string Initialize()
+        public string Initialize()
         {
             return string.Empty;
         }

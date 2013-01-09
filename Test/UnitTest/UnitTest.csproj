@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Source\IBatchDataContextTests.cs" />
     <Compile Include="Source\IRuntimeFactoryTests.cs" />
     <Compile Include="Source\IFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

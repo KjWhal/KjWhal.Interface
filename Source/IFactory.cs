@@ -8,7 +8,7 @@ namespace KjWhal.Interface
     public interface IFactory<T>
     {
         /// <summary>
-        /// Initializes a new instance of TResult with run-time arguments from TArgument
+        /// Initializes a new instance of T
         /// </summary>
         /// <returns>Instance of TResult</returns>
         T Initialize();
