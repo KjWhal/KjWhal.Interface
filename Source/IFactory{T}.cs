@@ -6,7 +6,7 @@ namespace KjWhal.Interface
     /// </summary>
     /// <typeparam name="TResult">Type to instantiate</typeparam>
     /// <typeparam name="TArgument">Type representing run-time arguments used in initialization</typeparam>
-    public interface IRuntimeFactory<TResult, TArgument>
+    public interface IFactory<TResult, TArgument>
     {
         /// <summary>
         /// Initializes a new instance of TResult with run-time arguments from TArgument
