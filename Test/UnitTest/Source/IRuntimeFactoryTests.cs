@@ -17,7 +17,7 @@ namespace UnitTest
         [TestMethod]
         public void IRuntimeFactoryPubliclyAvailable()
         {
-            IRuntimeFactory<string, string> sut = new RuntimeFactory();
+            IFactory<string, string> sut = new RuntimeFactory();
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace UnitTest
         [TestMethod]
         public void IRuntimeFactoryRequiresInitializeImplementation()
         {
-            IRuntimeFactory<string, string> sut = new RuntimeFactory();
+            IFactory<string, string> sut = new RuntimeFactory();
 
             var result = sut.Initialize(string.Empty);
 
@@ -34,7 +34,7 @@ namespace UnitTest
         }
     }
 
-    internal class RuntimeFactory : IRuntimeFactory<string, string>
+    internal class RuntimeFactory : IFactory<string, string>
     {
         public string Initialize(string argument)
         {

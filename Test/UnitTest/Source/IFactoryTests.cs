@@ -6,27 +6,27 @@ namespace UnitTest
     using KjWhal.Interface;
 
     /// <summary>
-    /// Container class for test methods of IFactory
+    /// Container class for test methods of IBuilder
     /// </summary>
     [TestClass]
-    public class IFactoryTests
+    public class IBuilderTests
     {
         /// <summary>
-        /// Verifies that Factory implements IFactory(T)
+        /// Verifies that Factory implements IBuilder(T)
         /// </summary>
         [TestMethod]
-        public void IFactoryPubliclyAvailable()
+        public void IBuilderPubliclyAvailable()
         {
-            IFactory<string> sut = new Factory();
+            IBuilder<string> sut = new Factory();
         }
 
         /// <summary>
-        /// Verifies that IFactory(T) implements Initialize
+        /// Verifies that IBuilder(T) implements Initialize
         /// </summary>
         [TestMethod]
-        public void IFactoryRequiresInitializeImplementation()
+        public void IBuilderRequiresInitializeImplementation()
         {
-            IFactory<string> sut = new Factory();
+            IBuilder<string> sut = new Factory();
 
             var result = sut.Initialize();
 
@@ -34,7 +34,7 @@ namespace UnitTest
         }
     }
 
-    internal class Factory : IFactory<string>
+    internal class Factory : IBuilder<string>
     {
         public string Initialize()
         {
