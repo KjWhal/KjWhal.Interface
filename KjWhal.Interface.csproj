@@ -41,9 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Source\IBatchDataContext.cs" />
-    <Compile Include="Source\IFactory.cs" />
-    <Compile Include="Source\IRuntimeFactory.cs" />
+    <Compile Include="Source\IBatchDataContext{T}.cs" />
+    <Compile Include="Source\IBuilder{T}.cs" />
+    <Compile Include="Source\IFactory{T}.cs" />
+    <Compile Include="Source\IPrototype{T}.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
